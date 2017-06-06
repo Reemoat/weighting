@@ -441,18 +441,20 @@ Weighting Impacts in Systems}
 % in the abstract or keywords.
 \IEEEtitleabstractindextext{%
 \begin{abstract}
-Developers and analysts who try to create sustainable systems may have to
-compromise when it comes to different environmental impacts. A nontrivial number
-of products saves energy, but in exchange produces dangerous material that the
-enery-inefficient alternative does not. These products reduce consumption at
+Developers and analysts who try to create environmentally sustainable systems
+occasionally
+compromise by reducing one environmental impact while increasing another one.
+Certain products save energy but produce dangerous material when an
+energy-inefficient alternative design would not. These products reduce
+consumption at
 the expense of introducing toxic substances into the environment. To deal with
 these tradeoffs,
 researchers, such as Patrick Hofstetter, have developed weighting metrics to
-account for every type of impact in a single assessment. However, the
-weights have the potential to direct the green design toward neglecting lowly
-weighted environmental concerns.
+account for every type of impact in a single assessment. However, a
+weighting metric has the potential to direct design toward neglecting lowly
+weighted impacts in order to address highly weighted ones.
 This study aims to clarify the effects of different weighting configurations.
-The project employs Hofstetter's mixing triangle that
+The project employs Hofstetter's mixing triangle, which
 weights three different areas of environmental impact against each other. It
 compares the effects of an application service provider to the effects of a
 system
@@ -503,45 +505,92 @@ development.
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-\IEEEPARstart{P}{rotecting} the environment has become a concern for product
-designers \cite{desktop2} \cite{client}, but how do these designers quantify the
+\IEEEPARstart{P}{roduct} designers concern themselves with protecting the
+environment \cite{desktop2} \cite{client}, but how do these designers quantify
+the
 impacts their products make? Researchers have made multiple metrics to address
 this issue \cite{14040} \cite{14044} \cite{gabi}, but these metrics have some
 complications. Specifically, when designers attempt to reduce a certain type of
 environmental impact, they might increase their impact in another way
-\cite{solar} \cite{cfl} \cite{battery}, and these different types of damage do
-not easily compare. This situation would not present a problem if designers
-could reduce particular impacts without increasing others, but many products
-designed to minimize impacts in one domain increase their impact in another one.
+\cite{solar} \cite{cfl} \cite{battery}. This situation would not present a
+problem if designers
+could reduce particular impacts without increasing others, but many green
+product designs unintentionally contribute to environmental degredation in areas
+that fell outside the scope of the designer's concerns. Specifically,
+energy-efficient products often achieve their lower uses of energy by using
+designs that produce dangerous waste.
 Such products include solar panels, compact fluorescent lamps (cfl), and
 rechargeable batteries. Each one of these products use less energy than their
-common alternatives, but each one also produces more toxic material than the
+common alternatives, but each one also produces more toxic material than their
 energy-inefficient alternatives do \cite{solar} \cite{cfl} \cite{battery}.
 
 If designers focus exclusively on one type of environmental impact,
 such as energy use, they run the risk of increasing damage in another way. The
 preceding examples suggest that designers have focused their efforts on energy
-use but not on dangerous material. If this pattern persists too much, then
+use and ignored dangerous material. In the process, some of the energy-efficient
+designs have actually increases the quanitity of toxic content in the
+environment. If this pattern persists too much,
+then
 dangerous material, or some other ignored domain, could become more of a
 problem. For this reason, analysts have motivation to use measurements of
 environmental damage that capture the entirety of a product's impact.
 
 As such, the tools that analysts use ideally will capture all environmental
-impacts of a product. This paper revolves around the issue of designers
-using environmental metrics in a way that neglects certain effects. Therefore,
-the paper focuses on tools that companies most widely use. For examining the
+impacts of a product. Some analysts already use such tools \cite{triangle}, but
+these techniques have limitations. For example, some methods use weighting to
+account
+for different dimensions of environmental impact. The next paragraph describes
+this process.
+
+To illustrate the weighting process, imagine an analyst has two value
+categories, one that
+quantifies energy use, and another that quantifies mercury released into the
+environment. The analyst has two different product designs. One design uses less
+energy, but the alternative produces less mercury. As a side note, this
+tradeoff describes the relationship between CFL and traditional light bulbs. The
+analyst has four values: the energy used by design 1, the mercury produced by
+design 1, the energy use by design 2, and the mercury produced by design 2. The
+analyst cannot simply conclude that one design has less impact than another, nor
+can the analyst simply add numbers together since they describe
+things with different consequences per unit. To resolve this issue, the analyst
+first normalizes the numbers to a common scale and then weights them such that
+the resulting values reflect the overall damage caused by either the energy use
+or mercury produced. The analyst can then add the energy number to the mercury
+number to get a final value that communicates the total damage of a design. The
+analyst now has a way to determine which design causes more harm.
+
+This approach allows an analyst to account for multiple dimensions, but it
+introduces subjectivity into the analysis. The weighting step involves a
+judgment on how much damage each type of impact causes. As such, this step can
+allow an analyst to focus on some impacts to the exclusion of
+others.
+
+This paper does not attempt to resolve the issue of the proper way to weight
+impacts. Instead it looks at how different weighting configurations would affect
+design decisions. In the previous example, a configuration that heavily weights
+energy use would likely favor design 1, while a configuration that heavily
+weights toxic waste would likely favor design 2. This paper seeks to investigate
+how this weighting process affects design decisions, if it has a significant
+effect at all. Perhaps weighting has a negligible effect on how different
+designs appear to damage the environment. However, if the effect proves
+significant, then analysts may want to consider what their assessment techniques
+mean for environmental impacts.
+
+This paper focuses on tools that companies most widely use. For examining the
 entire life cycle of a product, analysts worldwide most commonly use the
 software programs SimaPro and GaBi \cite{hermann}, both of which extend the
 Life-Cycle Assessment (LCA) technique to examine a product's entire life cycle.
-LCA does not refer to any specific type of software, but a process described by
+LCA does not refer to a specific type of software. It refers to a process
+documented by
 the International Organization for Standardization (ISO) \cite{14040}
-\cite{14044}. Analysts use GaBi and SimaPro more frequentl than any other
-software implementations of LCA. Both products evaluate
+\cite{14044}. Using LCA means abiding by the guidelines laid out by the ISO.
+To use LCA, analysts will often employ software, and they will typically
+use either SimaPro or GaBi. Both products evaluate
 multiple types of impacts by including methods to normalize and weight the
 results, so they allow an analyst to assess total impact in a single number
 \cite{gabi} \cite{simapro}. GaBi bases their weights on questionnare results
 from 245 experts on environmental impacts \cite{gabi}. SimaPro includes a
-triangle tool that allows the user to set weighting values \cite{simapro}.This
+triangle tool that allows the user to set weighting values \cite{simapro}. This
 paper focuses on the effects different weighting methods can have on
 analysis, so the authors employ SimaPro's weighting triangle tool instead of
 GaBi's technique.
@@ -555,21 +604,15 @@ human health (hh), ecosystem quality (eq), and resource use (ru)
 The impact categories come from Eco-Indicator 99, an extension to LCA. Like LCA,
 Eco-Indiator 99 refers to a process defined as a series of standards \cite{pre}.
 SimaPro implements these standards to normalize its LCA data \cite{simapro}.
-More specifically, LCA has an optional phase called the Life-Cycle Impact
+LCA has an optional phase called the Life-Cycle Impact
 Assessment (LCIA), which provides additional information for the interpretation
-of LCA results \cite{14044}. Eco-Indicator 99 offers one possible way among
-others to implement the LCIA phase. In this paper, LCIA refers to using
+of LCA results \cite{14044}. Eco-Indicator 99 offers one possible way
+to implement the LCIA. In this paper, LCIA refers to using
 Eco-Indicator 99 to normalize the data and using the weighting triangle to
 weight the normalized data.
 
-Due to financial constraints, this paper cannot emply SimaPro directly. Instead,
-it uses the normalization and weighting elements of SimaPro, Eco-Indicator 99
-and the weighting triangle, with OpenLCA, a free software implementation of LCA
-\cite{openlca}. It includes Eco-Indicator 99's normalization factors. The
-authors perform the weighting without the assistance of software.
-
-To summarize, this paper examines how metrics for environmental damage account
-for the different types of damage. To accomplish this task, the authors use LCA
+To summarize, this paper examines how weighting environmental damage affects
+product design. To accomplish this task, the authors use LCA
 as the example environmental metric because of its commonality. Eco-Indicator 99
 extends LCA by normalizing the data, and the weighting triangle allows an
 analyst to account for all of the different effects at once.
@@ -786,15 +829,21 @@ situation, they would not. Perhaps computer systems do not have the same
 problems that other green technology has. Just because some technology, such as
 a compact fluorescent lamp, saves energy at the cost of introducing dangerous
 physical material, it
-does not mean that computer systems must make the same compromise. Why do the
-different impacts do correlate? Knowing the characteristics that make
-products vulnerable to conflict between impacts could help future products avoid
-tradeoffs.
+does not mean that computer systems must make the same compromise.
+
+To test these questions, this paper documents the LCA results for the two
+aforementioned product designs. The LCA will use multiple weighting
+configurations in accordance with Hofstetter's mixing triangle to see the effect
+that weighting has. The results suggest that changing the weighting
+configuration has little effect on design outcomes for these two product
+designs. The
+results also suggest that climate change has a greater environmental impact than
+any other environmental consequence.
 
 \section{Background}
 Past research has analyzed the
 environmental consequences of computer systems. This
-Section includes an
+section includes an
 introduction to the theoretical foundations for environmental analysis and
 system design found in this research. It then summarizes the similarities and
 differences among the literature.
@@ -810,55 +859,66 @@ focuses on sustaining the environment for the sake of humans, and the other
 focuses on sustaining the environment for the sake of the intrinsic value of the
 natural world. This study contains elements of both perspectives.
 
+The review now turns to the relationship between environmental impact and
+centralized system design.
 Centralization and decentralization show up in multiple places in the world of
 computer systems. Choosing between centralized and decentralized designs shows
 up in fields such as operating systems and file sharing, among others. When
 assessing
 environmental effects, past research, such as D. Maga, M. Hiebel, and C.
-Knerman's, has found that centralized systems have smaller impacts
+Knerman's ``Comparison of two ICT solutions: Desktop PC versus thin client
+computing,'' has found that centralized systems have smaller impacts
 \cite{maga}. Decentralized systems often use more hardware than their
 centralized alternatives, and the amount of hardware tends to positively
 correlate with energy use. However, the studies on this subject have not
 definitively shown the consistently smaller impact of either design.
 
-Different types of environmental consequences do not always correlate. As shown
-by T. Tsoutsos, N. Frantzeskaki, and V. Gekas in the article ``Environmental
-impacts from solar energy
-technologies,'' by L. Ramroth in the article ``Comparison of life-cycle analyses
+Different types of environmental consequences do not always correlate. These
+three articles---``Environmental impacts from solar energy
+technologies'' by T. Tsoutsos, N. Frantzeskaki, and V. Gekas,
+``Comparison of life-cycle analyses
 of compact fluorescent and incandescent lamps based on rated life of compact
-fluorescent lamp,'' and by D.-i. Ra and K.-S. Han in the article ``Used lithium
-ion rechargeable battery recycling using Etoile-Rebatt technology,'' solar
+fluorescent lamp'' by L. Ramroth, and ``Used lithium
+ion rechargeable battery recycling using Etoile-Rebatt technology'' by D.-i. Ra
+and K.-S. Han---show the unintended consequences of green products. Solar
 panels, compact fluorescent lamps, and rechargeable batteries all save energy,
 but they also all produce dangerous material \cite{solar} \cite{cfl}
 \cite{battery}. An analyst must decide whether these products help or hurt the
-environment compared to their alternatives. With computer systems, studies will
+environment relative to their alternatives. With computer systems, studies
+will
 often prioritize energy at
 the expense of other environmental considerations \cite{maga}. Researchers can
-quantify energy in well understood units. Other environmental consequences, such
+quantify energy in well-understood units, which makes it a convenient point of
+focus. Other environmental consequences, such
 as ecotoxicity, do not translate into quantities as easily. Computer systems
 have components that cause acidification and eutrophication,
 so when analysts focus exclusively on energy, they overlook other relevant
-components.
+elements.
 
 Aside from ignoring certain types of environmental effects, analysts also
 occasionally ignore relevant processes involved in the system. As described by
 H. Mathews, C. Hendrickson, and D. Matthews in the book \textit{Life Cycle
 Assessment: Quantitative Approaches for Decisions That Matter}, researching the
 environmental effects of systems involves setting a system boundary, and that
-boundary may leave factors such as transportation or energy production outside
-of
+boundary may leave factors like transportation or energy production outside of
 the system's scope \cite{textbook}. Researchers often must compromise because
 they do not have access to all of the relevant data. However, neglecting
-these processes can distort results. For example, an assessment of a data center
-may define the use of cooling water outside of its scope. A cooling system may
+these processes can distort results. For example, an assessment of a data
+center's environmental impact
+might define the use of cooling water outside of its scope. A cooling system can
 contribute significantly to the overall system's environmental effects, and the
 assessment might reach an inaccurate conclusion because of the omission.
-Ideally, researchers will include as much of the relevant processes as possible.
+Ideally, researchers will include as much of the relevant information as
+possible.
 
-Environmental analysis always has value judgments. Concern for the environment
-implies valuing it. Assessing environmental impact entails other value
-judgments, such as how much value to place on human wellbeing in relation to
-ecological preservation. This study does not aim to resolve any conflicts
+Defining system boundaries exemplifies one of many ways that environmental
+analysis has value judgnments. At a fundamental level, concern for the
+environment
+implies valuing it. Additionally, assessing environmental impact entails other
+value
+judgments like how much value to place on human well-being in relation to
+ecological preservation \cite{pre}. This study does not aim to resolve any
+conflicts
 between values. It only aims to inform about how different methodologies
 determine
 system design. Specifically, weighting different environmental consequences
@@ -871,79 +931,80 @@ Environmental
 impact studies often recycle data, as shown by H. Gloge in the articles ``Thin
 clients 2011: Ecological and economic
 aspects of virtual desktops'' and ``Environmental comparison of the relevance
-of PC and thin client desktop equipment for the climate, 2008'', and by D. Maga,
+of PC and thin client desktop equipment for the climate, 2008'' and by D. Maga,
 M. Hiebel, and C. Knermann in their article \cite{client} \cite{desktop2}
-\cite{maga}. Researchers using certain techniques to analyze environmental
-impacts take data from studies that analyzed impacts using different
-methods. Researchers note the age of the data in
+\cite{maga}. Due to a dearth of easily attainable information, analysts have to
+use flawed data. Researchers note the age of the data in
 their studies because they cannot find recent information \cite{maga}
 \cite{client}. A. J{\"o}nbrink shows in ``Lot 3 personal computers
 (desktops
 and laptops) and computer monitors'' that when able, researchers use data from
 direct measurements
-\cite{desktop}. Researchers often cannot use direct measurements. Consequently,
-when a paper uses primary information, those data then show up
-in subsequent studies \cite{maga} \cite{desktop2}. Researchers should only
-go to secondary sources if they must. In the case of LCA studies,
+\cite{desktop}. However, they often cannot use direct measurements.
+Consequently,
+when a paper uses primary information, the data in the paper then show up
+in subsequent studies \cite{maga} \cite{desktop2}. Researchers ideally only
+go to secondary sources if they must, and they often must go to secondary
+sources. In the case of LCA studies,
 practitioners have established a
 hierarchy of data that privileges direct measurements above databases and
 databases above other studies \cite{textbook}. In spite of this hierarchy,
-researchers can rarely avoid using the inferior data sources.
+researchers can rarely avoid using data sources low on the hierarchy.
 
-Given that many of the studies use similar, occasionally identical, data, it
-comes as no surprise
-that they reach similar conclusions. For example, past research has consistently
+Since many studies use similar, occasionally identical, data, they
+frequently reach similar conclusions. For example, past research has
+consistently
 found better environmental performance among systems that use thin clients when
 compared to systems that use desktop computers \cite{maga} \cite{desktop2}.
 Systems based on thin clients use less energy and smaller quantities of physical
-material. One study that uses a full LCA finds
-the same advantages for client server systems \cite{maga}. This study found
-lower quantities of physical material and energy for the thin client system.
-Other researchers have tested multiple versions of desktop systems against
-their client server equivalents, and the results consistently favor
+material. For example, one study that used a full LCA found
+lower quantities of physical material and energy for the thin client system
+\cite{maga}.
+Other researchers using different methods have tested versions of desktop
+systems against
+their client-server equivalents, and the results consistently favor
 systems that use thin clients \cite{client}.
 
-The studies that use LCA as their method of analysis often do so because of its
+The studies that use LCA as their method of analysis often use it because of its
 cradle-to-the-grave approach \cite{14044}. Cradle-to-the-grave means that the
 analysis covers the following phases: raw material acquisition, production, use,
 and end-of-life treatment. However, not every assessment uses the
-cradle-to-grave approach. Other LCAs use a cradle-to-gate approach, which means
+cradle-to-grave approach. Some LCAs use a cradle-to-gate approach, which means
 that the
 analysis starts at material acquisition and ends after production \cite{14040}.
 This type of analysis neglects phases, such as disposal, that may alter the
 results of an analysis. Transportation can also go missing from these analyses,
-including both cradle-to-gate and cradle-to-grave LCAs.
+which happens in both cradle-to-gate and cradle-to-grave LCAs.
 
-Furthermore, studies occasionally neglect to account for energy production
-\cite{maga}
+Furthermore, studies occasionally neglect to account for the tangential effects
+of energy production \cite{maga}
 \cite{client} \cite{desktop}. The quantity of energy used might appear, but
-the impact of producing the energy does not always enter into the analysis.
-As such, these studies do not specify from where the energy comes. The source of
-energy can
+the analysis will not necessarily capture the full impact.
+More specifically, some studies do not specify the source of energy, and the
+source of energy can
 greatly affect the overall consequences. For example, nuclear energy yields a
 different set
 of consequences than energy produced by fossil fuels. Energy production involves
 transportation,
-disposal, and material extraction of its own, so it
+disposal, and material extraction of its own, and these processes differ if the
+source is nuclear or if it comes from fossils. Ignoring tangential processes
 potentially has a nontrivial impact on the overall results.
 
 Researchers vary on how they treat data limitations. LCA manuals, such as J.
 Guin\'{e}e et al.'s \textit{Handbook on Life Cycle Assessment}, explain
-proper ways to ensure data validity \cite{lca} \cite{textbook}
+ways to ensure data validity \cite{lca} \cite{textbook}
 \cite{14040} \cite{14044}. A comprehensive LCA will theoretically have a
 completeness check, a sensitivity check, a consistency check, and a third party
 report. Realistically, not all studies can include these steps. In
 principle, these processes assure that the LCA produces worthwhile
 results, but in practice, they demand so much from the researchers that
-steps inevitably get neglected. Not every practitioner has access
-to LCA experts, whom the LCA guidelines recommend be
-consulted \cite{14044}. The level of rigor involved in a complete LCA
-undermines its practicality.
+steps inevitably get neglected. As an example, not every practitioner has access
+to LCA experts, and the LCA guidelines recommend one be
+consulted \cite{14044}. The level of rigor involved in an ideal LCA
+keeps it from being practical for everyone.
 
 \subsection{Identified Research Gap}
-The need for research in this field comes from how environmental concerns can
-dictate system design. Government organizations set standards for technology,
-and
+Government organizations set standards for technology, and
 engineers need to design systems that conform to these standards. These
 regulations do not exempt computers. For example, as written by Dunkin in
 \textit{Personal Computer Configuration and Management Standard}, the
@@ -951,7 +1012,9 @@ Environmental Protection
 Agency of the United States asks that people and organizations purchase
 computers and monitors that have Energy Star
 compliance \cite{epa}. And if designers must make
-tradeoffs in order to comply, then weighting of impacts becomes relevant. 
+tradeoffs in order to comply, then weighting of impacts will affect
+the resulting products and, in turn, their impacts on the environment.
+Research on weighting can help illuminate these ramifications.
 
 \section{Method}
 This article documents the life cycle assessment of two computer systems
@@ -968,6 +1031,28 @@ results include the impact categories used by a weighting triangle that
 aggregates the results into a single score \cite{triangle}. Due to constraints
 on article length, many of the steps of a comprehensive LCA do not appear in
 this article.
+
+For the purposes of this study, the software SimaPro offers the most
+comprehensive means of conducting the LCA.
+However, due to financial constraints, this study could not employ SimaPro in
+its entirety. Instead,
+the authors used the normalization and weighting elements of SimaPro, which are
+Eco-Indicator 99
+and the weighting triangle, with OpenLCA, a free software implementation of LCA
+\cite{openlca}. OpenLCA includes Eco-Indicator 99's normalization factors. As
+for weighting the results, the
+authors performed this step without the assistance of software.
+
+The LCA begins by explaining its goal and motivations. It then sets the scope of
+the analysis. For LCA, the scope includes explanations for a functional unit,
+the system boundary, and the types of data. A functional unit provides a way to
+quantitatively describe performance of the systems. The system boundary
+determines which processes will go in the study and which will not. The types
+and sources of data section communicates from where and how the researchers
+obtained the data. The LCA continues with a section that explicitly relates the
+data to the functional unit. After this part, the paper presents the LCIA, in
+which the researchers use Eco-Indicator 99 to divide the impacts into categories
+and normalize the data. The LCA concludes by weighting the normalized values.
 
 \subsection{LCA Goal}
 This LCA aims to compare an ASP to a system of
