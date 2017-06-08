@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.18)  5 JUN 2017 20:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.18)  7 JUN 2017 20:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -332,15 +332,12 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 851.
  [2] [3] [4]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1170.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1181.
 
  [5]
-Overfull \hbox (7.38968pt too wide) in paragraph at lines 1243--1258
+Overfull \hbox (7.38968pt too wide) in paragraph at lines 1241--1256
  [][] 
  []
-
-
-Underfull \vbox (badness 1337) has occurred while \output is active []
 
 
 
@@ -351,31 +348,28 @@ pdfTeX warning: pdflatex (file ./graphics/total_energy_use_over_five_years.pdf)
 File: graphics/total_energy_use_over_five_years.pdf Graphic file (type pdf)
 <use graphics/total_energy_use_over_five_years.pdf>
 Package pdftex.def Info: graphics/total_energy_use_over_five_years.pdf used on 
-input line 1383.
+input line 1393.
 (pdftex.def)             Requested size: 268.58467pt x 108.86723pt.
 
-Overfull \hbox (15.63968pt too wide) in paragraph at lines 1383--1385
+Overfull \hbox (15.63968pt too wide) in paragraph at lines 1393--1395
  [][] 
  []
 
-[6 <./graphics/total_energy_use_over_five_years.pdf>]
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 146
+[6]
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 147
 8.
 
-Overfull \hbox (1.64172pt too wide) in paragraph at lines 1486--1515
+Overfull \hbox (1.64172pt too wide) in paragraph at lines 1496--1525
+ [][] 
+ []
+
+[7 <./graphics/total_energy_use_over_five_years.pdf>]
+Overfull \hbox (9.59747pt too wide) in paragraph at lines 1613--1624
  [][] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Overfull \hbox (9.59747pt too wide) in paragraph at lines 1603--1614
- [][] 
- []
-
-
-Overfull \hbox (9.59747pt too wide) in paragraph at lines 1620--1631
+Overfull \hbox (9.59747pt too wide) in paragraph at lines 1630--1641
  [][] 
  []
 
@@ -386,7 +380,7 @@ ersion <1.5>, but at most version <1.4> allowed
 <graphics/sums.pdf, id=53, 455.30101pt x 256.157pt>
 File: graphics/sums.pdf Graphic file (type pdf)
  <use graphics/sums.pdf>
-Package pdftex.def Info: graphics/sums.pdf used on input line 1779.
+Package pdftex.def Info: graphics/sums.pdf used on input line 1789.
 (pdftex.def)             Requested size: 250.41632pt x 140.88676pt.
 
 
@@ -395,7 +389,7 @@ ersion <1.5>, but at most version <1.4> allowed
 <graphics/mass.pdf, id=54, 455.30101pt x 256.157pt>
 File: graphics/mass.pdf Graphic file (type pdf)
  <use graphics/mass.pdf>
-Package pdftex.def Info: graphics/mass.pdf used on input line 1836.
+Package pdftex.def Info: graphics/mass.pdf used on input line 1846.
 (pdftex.def)             Requested size: 250.41632pt x 140.88676pt.
 
 
@@ -405,8 +399,11 @@ pdfTeX warning: pdflatex (file ./graphics/energy.pdf): PDF inclusion: found PDF
 File: graphics/energy.pdf Graphic file (type pdf)
 
 <use graphics/energy.pdf>
-Package pdftex.def Info: graphics/energy.pdf used on input line 1844.
+Package pdftex.def Info: graphics/energy.pdf used on input line 1854.
 (pdftex.def)             Requested size: 250.41632pt x 140.88676pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [9 <./graphics/sums.pdf>] (./weighting.bbl [10 <./graphics/mass.pdf> <./graphi
 cs/energy.pdf
 
@@ -431,12 +428,12 @@ ersion <1.5>, but at most version <1.4> allowed
 <graphics/bert.pdf, id=88, 319.1925pt x 399.4925pt>
 File: graphics/bert.pdf Graphic file (type pdf)
  <use graphics/bert.pdf>
-Package pdftex.def Info: graphics/bert.pdf used on input line 2011.
+Package pdftex.def Info: graphics/bert.pdf used on input line 2021.
 (pdftex.def)             Requested size: 72.26816pt x 90.33301pt.
 File: graphics/bert.pdf Graphic file (type pdf)
 
 <use graphics/bert.pdf>
-Package pdftex.def Info: graphics/bert.pdf used on input line 2011.
+Package pdftex.def Info: graphics/bert.pdf used on input line 2021.
 (pdftex.def)             Requested size: 72.26816pt x 90.33301pt.
 
 
@@ -446,17 +443,17 @@ und PDF version <1.5>, but at most version <1.4> allowed
 File: graphics/penzenstadler.pdf Graphic file (type pdf)
 
 <use graphics/penzenstadler.pdf>
-Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2020.
+Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2030.
 (pdftex.def)             Requested size: 72.27147pt x 90.33359pt.
 File: graphics/penzenstadler.pdf Graphic file (type pdf)
  <use graphics/penzenstadler.pdf>
-Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2020.
+Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2030.
 (pdftex.def)             Requested size: 72.27147pt x 90.33359pt.
  [11 <./graphics/bert.pdf> <./graphics/penzenstadler.pdf>] (./weighting.aux) ) 
 Here is how much of TeX's memory you used:
  3337 strings out of 493013
  50695 string characters out of 6139338
- 140150 words of memory out of 5000000
+ 147150 words of memory out of 5000000
  6819 multiletter control sequences out of 15000+600000
  52301 words of font info for 110 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -476,7 +473,7 @@ vetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></
 usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist
 /fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/za
 pfding/uzdr.pfb>
-Output written on weighting.pdf (11 pages, 465280 bytes).
+Output written on weighting.pdf (11 pages, 465571 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

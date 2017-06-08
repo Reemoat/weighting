@@ -598,7 +598,7 @@ GaBi's technique.
 The triangle comes from Hofstetter et al.'s research \cite{triangle}.
 Accordingly, this paper uses Hofstetter et al.'s triangle for the weighting
 configurations. This use entails using the triangles three impact categories:
-human health (hh), ecosystem quality (eq), and resource use (ru)
+human health (HH), ecosystem quality (EQ), and resource use (RU)
 \cite{triangle}.
 
 The impact categories come from Eco-Indicator 99, an extension to LCA. Like LCA,
@@ -1043,8 +1043,10 @@ and the weighting triangle, with OpenLCA, a free software implementation of LCA
 for weighting the results, the
 authors performed this step without the assistance of software.
 
-The LCA begins by explaining its goal and motivations. It then sets the scope of
-the analysis. For LCA, the scope includes explanations for a functional unit,
+The LCA begins by explaining its goal and motivations, which include reasons for
+using LCA and the study's starting points. It then sets the scope of
+the analysis. For LCA, the scope explains the study's assumptions, and it
+includes explanations for a functional unit,
 the system boundary, and the types of data. A functional unit provides a way to
 quantitatively describe performance of the systems. The system boundary
 determines which processes will go in the study and which will not. The types
@@ -1057,23 +1059,16 @@ and normalize the data. The LCA concludes by weighting the normalized values.
 \subsection{LCA Goal}
 This LCA aims to compare an ASP to a system of
 locally hosted software. The comparison can reveal how environmental
-considerations affect system design. Requirements engineers can use this
+considerations affect system design, and engineers can use this
 information to design sustainable systems. The LCA focuses
-on these three impact categories: human health, resource use, and ecosystem
-quality. Eco-Indicator 99, which the assessment phase of this LCA  employs,
-has these three categories. Although the LCA's goal involves a comparison, it
+on these three impact categories: HH, RU, and EQ. Eco-Indicator 99, which the
+assessment phase of this LCA  employs,
+uses these three categories. Although the LCA's goal involves a comparison, it
 does not include declaring the superiority or equivalence of one product in
-relation to the other. As such, the goal
+relation to the other, although a reader may draw such a conclusion from it. As
+such, the goal
 does not constitute a comparative assertion disclosed to the public as defined
 in the LCA standards \cite{lca}.
-
-This study uses LCA instead of alternatives such as Design for the Environment
-or the GREET Model because existing research tools
-for environmental weighting configurations, including the mixing triangle, use
-LCA
-as a foundation \cite{triangle}. This particular LCA acts as part of a larger
-research paper that will use this triangle.
-Therefore, LCA serves as an appropriate tool for this particular study.
 
 The LCA approach provides a
 thorough evaluation of the effects that the ASP and the distributed system might
@@ -1107,7 +1102,7 @@ implement EHRs as ASPs or locally hosted systems, as seen in the online articles
 advantages of ASP vs. locally hosted?'' \cite{mds} \cite{hrsa}.
 
 The LCA's data have an age range of approximately five to twenty years. The
-data sources decided this range. Data
+data sources dictated this range. Data
 collection took place over a six month period from 2015 into 2016. However, the
 researcher discarded
 most of the data acquired in the early months as unusable. Due to the study's
@@ -1117,12 +1112,12 @@ lack of access to primary sources, the National Renewable Energy Laboratory's
 data. According to the database's guidelines, titled \textit{U.S. LCI Database
 Project: User's Guide}, as of 2014, the database's content has an average age
 of five to six years
-\cite{database}. The rest of the data come from reports that use a technique
-called a Methodology for Eco-design of Energy-Using Products (MEEUP) to analyze
-hardware products. These analyses use data that
-range from ten to five years in age \cite{client} \cite{desktop}. The collection
+\cite{database}. The rest of the data came from reports that use a technique
+called a Methodology for Eco-design of Energy-Using Products (MEEUP). The MEEUP
+analyses use data that
+range from five to ten years in age \cite{client} \cite{desktop}. The collection
 and writing
-of the LCA occurred over the course of an academic year, and this situation
+of the LCA occurred over the course of an academic year. This situation
 imposed limits on the collection. A longer period of time would likely have
 yielded more accurate information.
 
@@ -1145,12 +1140,12 @@ as much as
 the information for the other machines. Specifically, the distribution and
 manufacturing data for the
 servers and desktop computers come from 2007 \cite{desktop}. More recent data
-either do not exist in the proper form for LCA or cost too much for the
-researcher to access.
+either did not exist in the proper form for LCA at the time research took place
+or cost too much for the researcher to access.
 
 The study's economic processes cover all material taken from and expelled into
 the environment during the materials extraction, manufacturing, transportation,
-use, and disposal of the systems. These
+use, and disposal phases of the systems. These
 processes do not focus on the systems' primary product because the product is
 software and not a physical object in need of disposal.
 
@@ -1164,14 +1159,13 @@ compounds, and general waste, both hazardous and nonhazardous.
 This LCA uses a simplified level of analysis. No one will implement the
 products, and the researcher has limited resources. This latter detail precludes
 a higher level of sophistication, and the former suggests that the
-assessment does not need a more sophisticated analysis. The purpose is to
-illustrate how environmental considerations affect system design.
+assessment does not need a more sophisticated analysis. The researcher only
+intends to illustrate how environmental considerations, mainly weighting of
+environmental impacts, affect system design.
 
-\subsubsection{Functional Unit}
-Both systems provide software as their primary functions.  As such, the LCA
-defines the functional unit as a single work day of software use.
-
-The assessment does not consider every possible systems. Alternatives include
+In describing the functional unit, the question of why these two system designs,
+ASP and local hosting, suit the study. The assessment does not consider
+every possible system. Alternatives include
 Software as a Service (SaaS) models and Local Area Networks (LAN). The study
 excludes
 these options because it has a goal of answering questions regarding the
@@ -1181,8 +1175,12 @@ these categories as comfortably as ASP does for centralized and distributed
 software does for decentralized. LAN systems offer an intermediate option, so
 they do not work for testing the differences between the extremes. As a
 consequence
-of these exclusions, the assessment fails to account for any advantages SaaS or
-an intermediate option might offer. 
+of these exclusions, the assessment fdoes not account for any advantages SaaS or
+an intermediate option might offer.
+
+\subsubsection{Functional Unit}
+Both systems provide software as their primary functions.  As such, the LCA
+defines the functional unit as a single work day of software use.
 
 The LCA defines its reference flow as 130 users each using
 the software over a five-year period. For the ASP,
@@ -1192,10 +1190,10 @@ For the distributed system, this flow requires 130 desktop computers.
 
 \subsubsection{System Boundary}
 In this LCA, the product systems for software distribution
-include any substance or energy that enters or
-leaves the systems and any substance or energy that comes from or enters the
+include any substance or energy that comes from or enters the
 environment. These substances and energies enter and leave without previous
-human transformation.
+human transformation. Any transformation of the raw materials functions as part
+of a system.
 
 The LCA models each system as a sum of foreground and background processes. The
 ASP's foreground system refers to the interactions of the servers and
@@ -1203,7 +1201,7 @@ clients. The ASP's background system includes the manufacturing
 of hardware parts, materials
 extraction, transportation, and disposal. The distributed software system's
 foreground
-includes the use of computers to run the software. Similar to the ASP, its
+includes the use of computers to run the software. Like the ASP, its
 background
 system includes materials extraction, manufacturing, transportation, and
 disposal.
@@ -1212,21 +1210,21 @@ Due to the limitations in NREL's LCA database, the LCA does not include all
 flows that cross the system boundary \cite{database}. For example, most of the
 processes in
 both systems use process water, but the process water flow available in the
-database lacks an accompanying unit process to document its inputs and
-emissions.
+database lacks an accompanying unit process in the database to document its
+inputs and emissions.
 
 \subsubsection{Types and Sources of Data}
-This LCA does not have primary data. The sources include two previous research
-papers
+This LCA does not have primary data. To reiterate, its data sources include two
+previous research papers
 and the NREL's LCI database. Both of the two papers use results from a
 MEEUP performed on
 computer products. As explained by R. Kemma et al. in \textit{MEEUP Methodology
 Report}, a MEEUP entails recording the emissions and materials used
 in a product's lifetime \cite{meeup}.
 
-The MEEUP results in the two papers track these
-three types of inputs for most processes, including energy, process
-water, and cooling water. For general waste, the analysis divides the outputs
+The results in the two MEEUP papers track
+three types of inputs for most processes: energy, process
+water, and cooling water. For general waste, the papers divide the outputs
 into hazardous and non-hazardous categories. For outputs to air, the MEEUPs
 recorded the following: Global Warming Potential (GWP), Acidification
 potential (AD), Volatile Orgranic Compounds (VOC), persistent organic
@@ -1263,15 +1261,18 @@ needed. For example, the papers do not account for the consequences of producing
 electricity, though they do account for electricity as a final product. The
 database does not have the same categorization scheme as the papers. To make
 them
-work together, the categories of the papers map to flows in the database. The
+work together, the categories of the papers map to flows in the database in some
+way. In other words, each category in the paper must belong to some catgory in
+the database. The
 mapping appears in Table \ref{tab:2}. Most of the categories do not perfectly
 match their substitutes. For example, acidification potential can change because
 of
 material other than sulfur dioxide, such as nitrogen oxide. However, the MEEUP
-data do not communicate the particular substances causing the acidification
+data do not communicate which particular substances cause the acidification
 potential to increase, so the LCA assumes sulfur dioxide causes all of the
-acidification potential. For each category,
-the LCA uses the closest approximation available in the database.
+acidification potential. In this manner,
+the LCA uses the closest approximation available in the database for every
+category in the MEEUP research.
 
 
 \begin{table}[t!]
@@ -1303,23 +1304,32 @@ the LCA uses the closest approximation available in the database.
 \end{table}
 
 
-Table \ref{tab:2} also classifies each entry by its flow type. The LCA classifies process
+Table \ref{tab:2} also classifies each entry by its flow type. Definitions of
+the flow types follow. Elementary flow describes material or energy entering
+the system from the environment without previous human tranformation. Product
+flow describes something the enters from another system or leaves to another
+system. Waste flow describes substances that will go through a disposal process
+\cite{14044}.
+
+The process water category complicated the analysis. The LCA classifies process
 water as a product flow because a process must prepare it for use by deionizing
 it. However, the database does not have a corresponding process for this
 product, so the LCA does not have the data to account for the process of
-creating process water.
+creating process water. As such, process water affects the results as if it were
+an elementary flow.
 
 \subsection{Relating Data to the Functional Unit}
-This LCA defines its functional
+To reiterate, this LCA defines its functional
 unit as a single work day of software use. Based D. Maga, M. Hiebel, and C.
-Knermann's article, the LCA treats a single work day as running a single thin
+Knermann's article, the LCA treats a single work day as running a thin
 client or desktop computer for nine hours a day \cite{maga}. Based on the same
-research, a year has 220 work days.
+research, the LCA treats a year as having 220 work days.
 
 To figure out the amount of energy expended by workers, the LCA distinguishes
 between two modes of operation: use and softoff. Softoff refers to a state of
-low power consumption, either standby or completely shut down. For thin clients,
-softoff machines generally still consume power in practice. For desktop
+low power consumption, either standby mode or a complete shut down. For thin
+clients,
+softoff machines generally still consume power. For desktop
 computers, softoff mode often means zero consumption \cite{client}. Table
 \ref{tab:6}
 displays how many hours each type of machine spends in each mode over a
@@ -1391,7 +1401,7 @@ thin
 clients. Consequently, the ASP has 130 thin clients and ten servers. The system
 of locally hosted software has 130 desktop computers. Multiplying the numbers in
 the middle column by the number of machines produces the numbers in the
-rightmost column.
+rightmost column in Table \ref{tab:7}.
 
 \subsection{Life Cycle Impact Assessment (LCIA)}
 After acquiring and processing the data, LCAs next have a life cycle impact
