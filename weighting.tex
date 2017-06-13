@@ -843,7 +843,7 @@ any other environmental consequence.
 \section{Background}
 Past research has analyzed the
 environmental consequences of computer systems. This
-section includes an
+Section includes an
 introduction to the theoretical foundations for environmental analysis and
 system design found in this research. It then summarizes the similarities and
 differences among the literature.
@@ -1050,8 +1050,8 @@ includes explanations for a functional unit,
 the system boundary, and the types of data. A functional unit provides a way to
 quantitatively describe performance of the systems. The system boundary
 determines which processes will go in the study and which will not. The types
-and sources of data section communicates from where and how the researchers
-obtained the data. The LCA continues with a section that explicitly relates the
+and sources of data Section communicates from where and how the researchers
+obtained the data. The LCA continues with a Section that explicitly relates the
 data to the functional unit. After this part, the paper presents the LCIA, in
 which the researchers use Eco-Indicator 99 to divide the impacts into categories
 and normalize the data. The LCA concludes by weighting the normalized values.
@@ -1104,7 +1104,7 @@ advantages of ASP vs. locally hosted?'' \cite{mds} \cite{hrsa}.
 The LCA's data have an age range of approximately five to twenty years. The
 data sources dictated this range. Data
 collection took place over a six month period from 2015 into 2016. However, the
-researcher discarded
+researchers discarded
 most of the data acquired in the early months as unusable. Due to the study's
 financial constraints and a
 lack of access to primary sources, the National Renewable Energy Laboratory's
@@ -1141,7 +1141,7 @@ the information for the other machines. Specifically, the distribution and
 manufacturing data for the
 servers and desktop computers come from 2007 \cite{desktop}. More recent data
 either did not exist in the proper form for LCA at the time research took place
-or cost too much for the researcher to access.
+or cost too much for the researchers to access.
 
 The study's economic processes cover all material taken from and expelled into
 the environment during the materials extraction, manufacturing, transportation,
@@ -1157,10 +1157,11 @@ particulates, phosphate, nickel, mercury, dioxins, furans, volatile organic
 compounds, and general waste, both hazardous and nonhazardous.
 
 This LCA uses a simplified level of analysis. No one will implement the
-products, and the researcher has limited resources. This latter detail precludes
+products, and the researchers have limited resources. This latter detail
+precludes
 a higher level of sophistication, and the former suggests that the
-assessment does not need a more sophisticated analysis. The researcher only
-intends to illustrate how environmental considerations, mainly weighting of
+assessment does not need a more sophisticated analysis. The researchers only
+intend to illustrate how environmental considerations, mainly weighting of
 environmental impacts, affect system design.
 
 In describing the functional unit, the question of why these two system designs,
@@ -1404,38 +1405,39 @@ the middle column by the number of machines produces the numbers in the
 rightmost column in Table \ref{tab:7}.
 
 \subsection{Life Cycle Impact Assessment (LCIA)}
-After acquiring and processing the data, LCAs next have a life cycle impact
-assessment (LCIA). For this particular study, the LCIA uses a method called
-Eco-Indicator 99. Eco-Indicator 99 has three impact categories: human health,
-ecosystem quality, and resource use \cite{pre}. Each impact category has its own
-subcategories. For human health, the subcategories include climate
+This Section begins with a review of the LCIA details. In this particular study,
+the LCIA uses
+Eco-Indicator 99. Eco-Indicator 99 has three impact categories: HH,
+EQ, and RU \cite{pre}. Each impact category has its own
+subcategories. For HH, the subcategories include climate
 change, ozone layer depletion, carcinogenic effects, respiratory effects, and
-ionizing radiation. For ecosystem quality, the subcategories include
-ecotoxicity,
-acidification, eutrophication, and land use. For resources, the subcategories
+ionizing radiation. For EQ, the subcategories include ecotoxicity,
+acidification, eutrophication, and land use. For RU, the subcategories
 include surplus energy from fossil fuels and minerals. 
 
 Alternative impact categories and indicators exist, but they do not serve this
 paper's needs as well. This study analyzes the consequences of weighting
 different environmental
-impacts. Since the tool for assigning weights, the mixing triangle, uses
+impacts. Since the chosen tool for assigning weights, the mixing triangle, uses
 Eco-Indicator 99, this study's LCA also uses Eco-Indicator 99, including its
 impact categories and category indicators \cite{triangle} \cite{pre}.
 
-Eco-Indicator offers three perspectives for characterization. This LCA will use
+Eco-Indicator offers three perspectives for characterization: individualist,
+hierarchist, and egalitarian. This LCA uses
 the individualist perspective because it has a shorter time
-perspective than the other two options, the hierarchist and egalitarian
-perspectives. According to M. Goedkoop and R. Spriensma in
+perspective than the other two options
+According to M. Goedkoop and R. Spriensma in
 \textit{The Eco-Indicator 99: A Damage Oriented Method for Life cycle Impact
 Assessment}, for the hierarchist and egalitarian
 perspectives, the calculations continue until the simulation reaches a steady
 state \cite{pre-annex}. This LCA does not need such a long time frame, so it
-uses the shorter time horizon assumed buy the individualist perspective.
+uses the shorter time horizon assumed by the individualist perspective.
 
-Each impact category has a characterization model. The individualist
-characterization model for human health uses concentrations from emission flows
-over a period of 100 to 200 years \cite{pre-annex}. For carcinogenics, the model
-only uses
+Each impact category has its own characterization factors. For HH, the individualist
+characterization model uses concentrations from emission flows
+over a period of 100 to 200 years \cite{pre-annex}. The following presents the
+sources of the characterization factors for HH's subcategories. For
+carcinogenics, the model only uses
 substances that the International Agency for Research on Cancer (IARC) considers
 to have sufficient evidence of carcinogenicity. For respiratory emissions, the
 characterization varies for each substance, but they all come from calculations
@@ -1443,25 +1445,27 @@ in P. Hofstetter's
 \textit{Perspectives in the Life Cycle Impact Assessment: A Structured Approach
 to Combine Models of the Technosphere, Ecosphere and Valuesphere} \cite{lcia}.
 The global warming information comes from multiple sources by the same author.
-The climate change model derives its estimates from General
-Circulation Models based scenarios documented in R. Tol's
+Specifically, the climate change model derives its estimates from what R. Tol
+calls General Circulation Models, as documented in Tol's
 ``Estimates of the damage costs of climate change part 1: Benchmark estimates''
 and ``Estimates of the damage costs of climate change part 2: Dynamic
 estimates'' \cite{climate1}
-\cite{climate2}. The final human health subcategory concern focuses on ozone.
+\cite{climate2}. The final HH subcategory focuses on ozone.
 For ozone
 layer depletion, the characterization model uses a
 hundred year time frame to create equivalency factors as documented in
 M. Hauschild's and H. Wenzel's \textit{Environmental Assessment of Products
 Volume 2: Scientific Background} \cite{ozone}.
 
-Ecosystem quality has two characterization models relevant to this LCIA. The
+Ecosystem quality has two characterization categories relevant to this LCIA. The
 first one focuses on ecotoxicity. The European Union System for the Evaluation
 of Substances provides a model for the toxicity of each relevant emission, as
 documented in T. Vermeire et al.'s article, ``European Union system for the
 evaluation of substances (EUSES). Principle and structure''
-\cite{euses}. The other model addresses acidification and eutrophication. This
-latter model uses the percentage of plants likely to disappear, as calculated on
+\cite{euses}. The other characterization category addresses acidification and
+eutrophication. This
+latter category uses the percentage of plants likely to disappear, as calculated
+on
 a
 European scale by the Ministry of Housing, Spatial Planning and the Environment
 \cite{pre}.
@@ -1470,22 +1474,20 @@ The mechanism by which Eco-Indicator 99 assesses an impact involves taking the
 relevant environmental flows and characterizing them as a quantity with a
 particular unit. For
 example, a few of the processes release carbon dioxide into the environment.
-This
-carbon dioxide affects human health, so carbon dioxide becomes relevant to the
-climate change subcategory and its containing human health impact category.
+This carbon dioxide has relevance to the
+climate change subcategory and its containing HH impact category.
 Every relevant flow has a
 characterization factor assigned to it based on the size of its impact. Carbon dioxide has
 a characterization factor of 0.013333 $\frac{\textrm{DALY}}{\textrm{kg}}$.
 These
-characterization factor numbers come from the characterization models for each
-impact category.
-The researcher multiplies the factor by the
-amount of carbon dioxide to
-quantify how much it contributed to the category. 
+characterization factor numbers come from the characterization the sources in
+the preceding paragraphs of this Section.
+To characterize the values, the researchers multiply the factor by the amount
+of carbon dioxide to quantify how much it contributed to the category. 
 
 Due to the scale of the task, not every flow in the systems entered into the
-assessment. The researcher has to enter every individual flow into
-Eco-Indicator from NREL's database, but the large quantity of flows makes
+assessment. The researchers had to enter every individual flow into
+Eco-Indicator from NREL's database, but the large quantity of flows made
 including all of them unrealistic for the time allotted.
 
 \begin{table}[t!]
@@ -1524,20 +1526,21 @@ including all of them unrealistic for the time allotted.
   %\end{center}
 \end{table}
 
-Table \ref{tab:8} shows the characterization factors for the elementary flows
-output by the
-processes derived from the MEEUP analyses, as well as the elementary flow for
-the bituminous coal. For the sake of space, the table uses
+Table \ref{tab:8} shows the characterization factors for the elementary
+flows output by the
+processes derived from the MEEUP analyses. For the sake of space, the table uses
 the synonymous phrase ``impact factor'' in place of ``characterization factor''
-in the table's header. The
-researcher fabricated the value for the coal because OpenLCA's
+in the table's header. However, the impact factor for coal does not come
+from Eco-Indicator's data. The
+researchers fabricated this value because OpenLCA's
 available Eco-Indicator data do
 not have any fossil fuel information to use as a point of comparison. The other
 values in
-the table come from finding equivalent flows in the default Eco-Indicator data.
+the table come from finding equivalent flows in OpenLCA's default Eco-Indicator
+data.
 
 \subsection{Normalization}
-The OpenLCA implementation of Eco-Indicator 99 has
+The OpenLCA implementation of Eco-Indicator 99 provides
 normalization values. The normalization numbers come from a reference value
 calculated by the following formula from T. Blonk et al.'s \textit{Drie
 Referentieniveau's voor Normalisatie in LCA [Three Reference Levels for
@@ -1545,7 +1548,7 @@ Normalization in LCA]} \cite{blonk} \cite{pre-annex}.
 \begin{equation}
   E_t = P_t \cdot \frac{E_k}{P_K}
 \end{equation}
-The definition of each symbol follows.
+The definition of each variable follows.
 \begin{equation}
   E_t \equiv \textrm{Total emission in Europe}
 \end{equation}
@@ -1560,7 +1563,7 @@ The definition of each symbol follows.
 \end{equation}
 
 Table \ref{tab:9} summarizes the values that result from this calculation. The
-normalization factors come directly from the OpenLCA LCIA database, so this
+numbers come directly from the OpenLCA LCIA database, so this
 study uses the same number of significant figures as the database.
 
 \begin{table}[t!]
@@ -1582,26 +1585,24 @@ study uses the same number of significant figures as the database.
 
 \subsection{Weighting}
 This LCA uses multiple weighting configurations. The configurations compromise
-between human health, ecosystem quality, and resource use.
-The three weighting factors, one for each impact category, must add up to 100\%.
-The researcher multiplies the factors by the corresponding numbers that
-represent the impact for one of the categories.
-This LCA uses a mixing triangle with the
-same impact categories as Eco-Indicator 99, although researchers could
-theoretically formulate different categories for weighting \cite{triangle}.
+between HH, EQ, and RU.
+The three weighting factors, one for each impact category, must add up to 100\%
+\cite{triangle}.
+The researchers multiply the factors by the corresponding numbers
+that represent the impact for each of the categories.
 
 \section{Results and Discussion}
 The LCA concludes by presenting the results from the LCIA in raw, normalized,
 and weighted forms. Then it moves into an interpretation phase, which
 involves identifying issues with the analysis, such as incompleteness of the
-data or insufficiency of the impact categories. This Section finishes with
-analyzing how the results inform the research questions.
+data or insufficiency of the impact categories. This Section concludes with an
+analysis of how the results inform the research questions.
 
 \subsection{LCIA Results}
 Tables \ref{tab:10} and \ref{tab:11} show the LCIA results for each system
-without weighting. The ASP
+before weighting. The ASP
 has a smaller impact on all three impact categories, so regardless of the
-weighting configuration, it will always produce the preferable results in a
+weighting configuration, it will always produce a smaller impact in a
 comparison between systems. However, the discrepancy between systems might grow
 or shrink based on the weights.
 
@@ -1643,8 +1644,8 @@ or shrink based on the weights.
 Table \ref{tab:12} shows the different weighting configurations employed for the
 study.
 The leftmost column assigns a number to each configuration. These
-numbers appear in Tables \ref{tab:13} and \ref{tab:14} and corresponds to the
-configurations that appear in Table \ref{tab:12}.
+numbers appear again in Tables \ref{tab:13} and \ref{tab:14} and correspond to
+the configurations that appear in Table \ref{tab:12}.
 
 \begin{table}[t!]
   \caption{Weighting Configurations}
@@ -1675,8 +1676,9 @@ configurations that appear in Table \ref{tab:12}.
   %\end{center}
 \end{table}
 
-Tables \ref{tab:13} and \ref{tab:14} shows the results after weighting for the ASP and the locally
-hosted system, respectively. The rightmost column shows a single score to
+Tables \ref{tab:13} and \ref{tab:14} show the results after weighting for the ASP and the locally
+hosted system, respectively. The rightmost column in each table shows a single
+score to
 evaluate the overall impact of the system. The range of numbers in this column
 shows how a weighting configuration can manipulate the outcome of an analysis.
 
@@ -1742,9 +1744,9 @@ shows how a weighting configuration can manipulate the outcome of an analysis.
 Table \ref{tab:15} shows the difference between the sums of the two systems at
 each
 weighting configuration. It presents the data sorted by the difference. The more
-weight assigned to human health, the greater the discrepancy. Resource use
-follows human health in terms of producing the largest difference, and
-configurations that place more weight on ecosystem quality produce the smallest
+weight assigned to HH, the greater the discrepancy. Resource use
+follows HH in terms of producing the largest difference.
+Configurations that place more weight on EQ produce the smallest
 differences.
 
 \begin{table}[t!]
@@ -1777,11 +1779,11 @@ differences.
 \end{table}
 
 Fig. \ref{fig:tab2} shows a graph of the sums for each system for every
-configuration. The ASP never generates a higher number, suggesting that the ASP
+configuration. The ASP never generates a higher number than the system of
+locally hosted software, suggesting that the ASP
 invariably has a smaller impact. A few of the graph's bars do not show up
-because
-of their small size. The bars that are too small to show up in the graph come
-from configurations that do not emphasize human health.
+because of their small size. The bars that are too small to show up in the graph
+correspond to configurations that do not emphasize HH very much.
 
 \begin{figure}[t!]
   %\begin{center}
@@ -1793,38 +1795,42 @@ from configurations that do not emphasize human health.
 \end{figure}
 
 One interpretation of the data suggests that an environmental analysis that
-places little concern on human health would show little reason to
-pick one design over the other. However, the differences between the sums
+places little concern on HH would show little reason to
+pick one design over the other. The configurations with little weight for HH
+produce the smallest impacts. However, the differences between the sums
 correlate with the
 overall size of the effects. In other words, the increase in the difference
 between overall effects
-reflects an increase in the size of the overall effect. Tables \ref{tab:13}
-and \ref{tab:14} show
-that human health produces larger numbers for both systems. The dominance of
-human health comes from the carbon dioxide, which makes up over 99\% of the
-human health effects for both systems. These results suggest that
+occurs alongside an increase in the size of the overall effect. The biggest
+overall effects occur when maximizing the weight on HH. Tables
+\ref{tab:13} and \ref{tab:14} show
+that HH produces larger numbers for both systems. The dominance of
+HH comes from the carbon dioxide, which makes up over 99\% of the
+HH effects for both systems. These results suggest that
 designers should focus almost exclusively on global warming potential because
-the other impacts have such a small effect unless the weighting for human
-health approaches zero.
+the other impacts have such a relatively small effect that the weighting for
+human health must approach zero for them to appear significant.
 
 Ultimately, the results do not offer a clear answer to how a weighting
 configuration might
-dictate system design. They suggest that a centralized system offer
-a superior option to a decentralized system. However, the approximations on the
-systems favor the centralized design. The absence of networking equipment in the
-LCA may cause an underestimation of the ASP's impact. Also, the results suggest
+dictate system design. They suggest that a centralized system offers
+a less impactful option when compared to a decentralized system. However, this
+result might come from how the approximations in the study favor
+the centralized design. For example, the absence of networking equipment in the
+LCA may cause an underestimation of the ASP's impact.
+
+The results suggest
 that energy use correlates with raw material use. The ASP does not have as much
-physical material, and it correlatingly uses less energy.
+physical material, and it correlatingly uses less energy. Fig. \ref{fig:tab3}
+and Fig. \ref{fig:tab4} present a graphical comparison of the
+energy and mass of the two systems, showing that the two features increase
+together.
 
-Fig. \ref{fig:tab3} and Fig. \ref{fig:tab4} present a graphical comparison of the
-energy and mass of the two systems. The two features correlate. The system with
-more mass uses more energy present a graphical comparison of the energy and mass
-of the two systems. The two features correlate. The system with more mass uses
-more energy.
-
-For the first research question, the results indicate that the weighting
+The papaer now returns to its research questions. For the first question, the
+results indicate that the weighting
 configurations have a negligible effect on design decisions because the results
-uniformly favor the centralized deign. If one of the configurations had produced
+uniformly favor the centralized design. If one of the configurations had
+produced
 numbers showing a smaller impact for the decentralized method, then the results
 would have shown the significance of weighting. This event did not occur, so
 nothing in the study shows that weighting configurations will affect design very
@@ -1857,7 +1863,7 @@ reader should take caution in generalizing this result to other systems.
   \label{fig:tab4}
 \end{figure}
 
-\subsection{Analytical Investigation}
+%\subsection{Analytical Investigation}
 
 \section{Conclusion}
 The study found that the weighting did not change which
@@ -1873,49 +1879,59 @@ concluded that server client
 models have a smaller environmental impact than equivalent systems that run on
 desktop computers. This study produces no evidence of tradeoffs for this type
 of system. However, these results might not generalize to centralized and
-decentralized systems. This paper focuses on centralization
-in a hardware sense. For software, centralized systems might not
-always have a smaller impact. For example, the operating systems that manage
-servers often have decentralized structures, and this study found lower impacts
-with server-based systems.
+decentralized systems. To illustrate this point, note that this paper focuses on
+centralization in a hardware sense. For software, centralized systems might not
+always have a smaller impact. A researcher could hypothesize that decentralized
+software structure allows for greater control over environmental management and
+thus a smaller impact. 
 
-The impact factors had a much greater effect on the results than the weighting.
-The only time the human health impact category did not dominate occurred when
-the researcher set its weight to zero. The biggest emission contribution comes
-from carbon dioxide equivalents. This result suggests that global warming
+The LCIA showed that the impact factors had a much greater effect on the
+results than the weighting.
+The only time the HH impact category did not dominate occurred when
+the researcher set its weight to zero. The biggest emission contribution came
+from carbon dioxide equivalents. This result suggested that global warming
 causes significantly more damage than any other environmental consequence
 included in the Eco-Indicator data. Because of the dominance of this impact
-category, weighting has a minimal effect.
+category, weighting had a minimal effect.
 
 \subsection{Implications}
 The results imply that the established wisdom of green technology design is
 valid. Nothing in the results indicates a problem with the conclusions of
-past research. The issue with making tradeoffs among impacts comes from the
+past research. The issue with making tradeoffs among impacts would come from the
 potential of creating disastrous consequences in one category to improve the
-situation in another. However, the lack of tradeoffs found in this study
-immunizes the examined systems to this problem. System designers do not
-always have to compromise among impacts.
+situation in another category. However, this study did not find one category
+improved while another deteriorated, so the examined systems do not have this
+tradeoff problem. The results suggest that system designers do not always have
+to compromise among impacts.
 
 The results also imply that global warming is the most significant consequence
 with respect to these systems. Assuming the accuracy of the  characterization
 factors in Eco-Indicator 99, the other impacts have relatively little effect.
 The results suggest that computer systems contribute to global warming potential
 more than any other category. Because of the magnitude of this category, system
-designers do not need to use an all-inclusive approach such as the LCA to
+designers do not need to use an all-inclusive approach like the LCA to
 gauge the impact of their designs. A less demanding alternative that focuses
 exclusively on carbon emissions will suffice.
 
 \subsection{Limitations}
-This study has numerous limitations. Data availability severely restricts how
-the LCA progresses. The lack of information completely dictates both the system
-boundary and data requirements. The databases contain errors, and portions of
+This study had numerous limitations. Data availability severely restricted how
+the LCA progressed. The lack of information completely dictated both the system
+boundary and data requirements. The databases contained errors, and portions of
 their
-contents comes from over a decade ago. The study does not account for all the
-hardware components. For computer monitors, this detail does not matter because
-both systems theoretically have the same number and type of monitors. But for
-network hardware, an issue arises because the ASP needs more networking material
-than its alternative. Finally, the data assume all energy comes from bituminous
-coal in the form of electricity.
+contents have aged more than ten years.
+
+Also, the study did not account for all the
+hardware components. For computer monitors, this detail did not matter because
+both systems theoretically had the same number and type of monitors. But for
+network hardware, an issue arose because the ASP would need more networking
+material
+than its alternative.
+
+Finally, the data assumed all energy came from bituminous coal in the form of
+electricity. This assumption about the source of electricity might
+reasonably approximate reality in terms
+of environmental impact, but the reader should remain aware of it in case it
+does not.
 
 \subsection{Future Research}
 Future research can further investigate how the methodologies behind impact
@@ -1925,11 +1941,13 @@ tested with multiple weighting configurations. Other future research might
 entail performing LCAs on smaller products. Components from smaller product
 systems build up larger, complex systems in the LCA method, so having a
 catalogue of research on individual parts would enable researchers to conduct
-assessments more easily and accurately. Finally, future research can focus on
-how less demanding assessment methods differ in their results from their
-more expansive counterparts. LCA demands rigor, so if
+assessments more easily and accurately on systems composed of the smaller
+systems. Finally, future research can focus on
+how assessment methods of varying rigor differ in their results. LCA demands
+a lot of investment, so if
 it does not add much beyond what a less-rigorous method would find,
-engineers and analysts might know when to avoid it.
+engineers and analysts might benefit from knowing when it would be more than
+they need.
 
 
 

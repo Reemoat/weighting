@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.18)  7 JUN 2017 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.18)  13 JUN 2017 19:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -332,10 +332,10 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 851.
  [2] [3] [4]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1181.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1182.
 
  [5]
-Overfull \hbox (7.38968pt too wide) in paragraph at lines 1241--1256
+Overfull \hbox (7.38968pt too wide) in paragraph at lines 1242--1257
  [][] 
  []
 
@@ -348,28 +348,28 @@ pdfTeX warning: pdflatex (file ./graphics/total_energy_use_over_five_years.pdf)
 File: graphics/total_energy_use_over_five_years.pdf Graphic file (type pdf)
 <use graphics/total_energy_use_over_five_years.pdf>
 Package pdftex.def Info: graphics/total_energy_use_over_five_years.pdf used on 
-input line 1393.
+input line 1394.
 (pdftex.def)             Requested size: 268.58467pt x 108.86723pt.
 
-Overfull \hbox (15.63968pt too wide) in paragraph at lines 1393--1395
+Overfull \hbox (15.63968pt too wide) in paragraph at lines 1394--1396
  [][] 
  []
 
 [6]
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 147
-8.
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 148
+1.
 
-Overfull \hbox (1.64172pt too wide) in paragraph at lines 1496--1525
+Overfull \hbox (1.64172pt too wide) in paragraph at lines 1498--1527
  [][] 
  []
 
 [7 <./graphics/total_energy_use_over_five_years.pdf>]
-Overfull \hbox (9.59747pt too wide) in paragraph at lines 1613--1624
+Overfull \hbox (9.59747pt too wide) in paragraph at lines 1614--1625
  [][] 
  []
 
 
-Overfull \hbox (9.59747pt too wide) in paragraph at lines 1630--1641
+Overfull \hbox (9.59747pt too wide) in paragraph at lines 1631--1642
  [][] 
  []
 
@@ -380,7 +380,7 @@ ersion <1.5>, but at most version <1.4> allowed
 <graphics/sums.pdf, id=53, 455.30101pt x 256.157pt>
 File: graphics/sums.pdf Graphic file (type pdf)
  <use graphics/sums.pdf>
-Package pdftex.def Info: graphics/sums.pdf used on input line 1789.
+Package pdftex.def Info: graphics/sums.pdf used on input line 1791.
 (pdftex.def)             Requested size: 250.41632pt x 140.88676pt.
 
 
@@ -389,7 +389,7 @@ ersion <1.5>, but at most version <1.4> allowed
 <graphics/mass.pdf, id=54, 455.30101pt x 256.157pt>
 File: graphics/mass.pdf Graphic file (type pdf)
  <use graphics/mass.pdf>
-Package pdftex.def Info: graphics/mass.pdf used on input line 1846.
+Package pdftex.def Info: graphics/mass.pdf used on input line 1852.
 (pdftex.def)             Requested size: 250.41632pt x 140.88676pt.
 
 
@@ -399,11 +399,8 @@ pdfTeX warning: pdflatex (file ./graphics/energy.pdf): PDF inclusion: found PDF
 File: graphics/energy.pdf Graphic file (type pdf)
 
 <use graphics/energy.pdf>
-Package pdftex.def Info: graphics/energy.pdf used on input line 1854.
+Package pdftex.def Info: graphics/energy.pdf used on input line 1860.
 (pdftex.def)             Requested size: 250.41632pt x 140.88676pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [9 <./graphics/sums.pdf>] (./weighting.bbl [10 <./graphics/mass.pdf> <./graphi
 cs/energy.pdf
 
@@ -428,12 +425,12 @@ ersion <1.5>, but at most version <1.4> allowed
 <graphics/bert.pdf, id=88, 319.1925pt x 399.4925pt>
 File: graphics/bert.pdf Graphic file (type pdf)
  <use graphics/bert.pdf>
-Package pdftex.def Info: graphics/bert.pdf used on input line 2021.
+Package pdftex.def Info: graphics/bert.pdf used on input line 2039.
 (pdftex.def)             Requested size: 72.26816pt x 90.33301pt.
 File: graphics/bert.pdf Graphic file (type pdf)
 
 <use graphics/bert.pdf>
-Package pdftex.def Info: graphics/bert.pdf used on input line 2021.
+Package pdftex.def Info: graphics/bert.pdf used on input line 2039.
 (pdftex.def)             Requested size: 72.26816pt x 90.33301pt.
 
 
@@ -443,11 +440,11 @@ und PDF version <1.5>, but at most version <1.4> allowed
 File: graphics/penzenstadler.pdf Graphic file (type pdf)
 
 <use graphics/penzenstadler.pdf>
-Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2030.
+Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2048.
 (pdftex.def)             Requested size: 72.27147pt x 90.33359pt.
 File: graphics/penzenstadler.pdf Graphic file (type pdf)
  <use graphics/penzenstadler.pdf>
-Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2030.
+Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2048.
 (pdftex.def)             Requested size: 72.27147pt x 90.33359pt.
  [11 <./graphics/bert.pdf> <./graphics/penzenstadler.pdf>] (./weighting.aux) ) 
 Here is how much of TeX's memory you used:
@@ -473,7 +470,7 @@ vetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></
 usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist
 /fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/za
 pfding/uzdr.pfb>
-Output written on weighting.pdf (11 pages, 465571 bytes).
+Output written on weighting.pdf (11 pages, 465760 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
