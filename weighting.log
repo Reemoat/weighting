@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.18)  27 JUN 2017 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.8.18)  13 JUL 2017 19:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -223,18 +223,18 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./weighting.aux)
 \openout1 = `weighting.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 354.
-LaTeX Font Info:    ... okay on input line 354.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 354.
-LaTeX Font Info:    ... okay on input line 354.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 354.
-LaTeX Font Info:    ... okay on input line 354.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 354.
-LaTeX Font Info:    ... okay on input line 354.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 354.
-LaTeX Font Info:    ... okay on input line 354.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 354.
-LaTeX Font Info:    ... okay on input line 354.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 353.
+LaTeX Font Info:    ... okay on input line 353.
 
 -- Lines per column: 61 (exact).
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -298,29 +298,29 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 474.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 476.
 
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 474.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 476.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8.03> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 474.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 476.
 LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 47
-4.
-LaTeX Font Info:    Try loading font information for U+pzd on input line 474.
+6.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 476.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 474.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 476.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11.04124> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 492.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 494.
 LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <11.04124> not available
 
-(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 492.
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 494.
 
 pdfTeX warning (Object streams): \pdfobjcompresslevel > 0 requires \pdfminorver
 sion > 4. Object streams disabled now.
@@ -329,67 +329,62 @@ sion > 4. Object streams disabled now.
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 853.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 855.
  [2] [3] [4]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1184.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 1189.
 
- [5]
-Overfull \hbox (7.38968pt too wide) in paragraph at lines 1244--1259
- [][] 
- []
-
-
+ [5] [6]
 
 pdfTeX warning: pdflatex (file ./graphics/total_energy_use_over_five_years.pdf)
 : PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
 
-<graphics/total_energy_use_over_five_years.pdf, id=24, 631.96097pt x 256.157pt>
+<graphics/total_energy_use_over_five_years.pdf, id=27, 631.96097pt x 256.157pt>
 File: graphics/total_energy_use_over_five_years.pdf Graphic file (type pdf)
 <use graphics/total_energy_use_over_five_years.pdf>
 Package pdftex.def Info: graphics/total_energy_use_over_five_years.pdf used on 
-input line 1396.
+input line 1402.
 (pdftex.def)             Requested size: 268.58467pt x 108.86723pt.
 
-Overfull \hbox (15.63968pt too wide) in paragraph at lines 1396--1398
+Overfull \hbox (15.63968pt too wide) in paragraph at lines 1402--1404
  [][] 
  []
 
-[6]
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 148
-3.
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 149
+1.
 
-Overfull \hbox (1.64172pt too wide) in paragraph at lines 1500--1529
+Overfull \hbox (1.64172pt too wide) in paragraph at lines 1503--1532
  [][] 
  []
 
 [7 <./graphics/total_energy_use_over_five_years.pdf>]
-Overfull \hbox (9.59747pt too wide) in paragraph at lines 1616--1627
+Overfull \hbox (9.59747pt too wide) in paragraph at lines 1626--1637
  [][] 
  []
 
 
-Overfull \hbox (9.59747pt too wide) in paragraph at lines 1633--1644
+Overfull \hbox (9.59747pt too wide) in paragraph at lines 1643--1654
  [][] 
  []
 
-[8]
+
 
 pdfTeX warning: pdflatex (file ./graphics/sums.pdf): PDF inclusion: found PDF v
 ersion <1.5>, but at most version <1.4> allowed
-<graphics/sums.pdf, id=53, 455.30101pt x 256.157pt>
+<graphics/sums.pdf, id=41, 455.30101pt x 256.157pt>
 File: graphics/sums.pdf Graphic file (type pdf)
  <use graphics/sums.pdf>
-Package pdftex.def Info: graphics/sums.pdf used on input line 1793.
+Package pdftex.def Info: graphics/sums.pdf used on input line 1803.
 (pdftex.def)             Requested size: 250.41632pt x 140.88676pt.
 
+[8]
 
 pdfTeX warning: pdflatex (file ./graphics/mass.pdf): PDF inclusion: found PDF v
 ersion <1.5>, but at most version <1.4> allowed
 <graphics/mass.pdf, id=54, 455.30101pt x 256.157pt>
 File: graphics/mass.pdf Graphic file (type pdf)
  <use graphics/mass.pdf>
-Package pdftex.def Info: graphics/mass.pdf used on input line 1854.
+Package pdftex.def Info: graphics/mass.pdf used on input line 1864.
 (pdftex.def)             Requested size: 250.41632pt x 140.88676pt.
 
 
@@ -399,14 +394,17 @@ pdfTeX warning: pdflatex (file ./graphics/energy.pdf): PDF inclusion: found PDF
 File: graphics/energy.pdf Graphic file (type pdf)
 
 <use graphics/energy.pdf>
-Package pdftex.def Info: graphics/energy.pdf used on input line 1862.
+Package pdftex.def Info: graphics/energy.pdf used on input line 1872.
 (pdftex.def)             Requested size: 250.41632pt x 140.88676pt.
- [9 <./graphics/sums.pdf>] (./weighting.bbl [10 <./graphics/mass.pdf> <./graphi
-cs/energy.pdf
+ [9] [10 <./graphics/sums.pdf> <./graphics/mass.pdf
+
+pdfTeX warning: pdflatex (file ./graphics/mass.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+> <./graphics/energy.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/energy.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
->]
+>] (./weighting.bbl
 Underfull \hbox (badness 1472) in paragraph at lines 77--80
 \OT1/ppl/m/it/8.03 Sources\OT1/ppl/m/n/8.03 , vol. 163, no. 1, pp. 284--288, De
 -cem-ber 2006. doi:
@@ -422,57 +420,58 @@ e
 
 pdfTeX warning: pdflatex (file ./graphics/bert.pdf): PDF inclusion: found PDF v
 ersion <1.5>, but at most version <1.4> allowed
-<graphics/bert.pdf, id=88, 319.1925pt x 399.4925pt>
+<graphics/bert.pdf, id=87, 319.1925pt x 399.4925pt>
 File: graphics/bert.pdf Graphic file (type pdf)
  <use graphics/bert.pdf>
-Package pdftex.def Info: graphics/bert.pdf used on input line 2041.
+Package pdftex.def Info: graphics/bert.pdf used on input line 2052.
 (pdftex.def)             Requested size: 72.26816pt x 90.33301pt.
 File: graphics/bert.pdf Graphic file (type pdf)
 
 <use graphics/bert.pdf>
-Package pdftex.def Info: graphics/bert.pdf used on input line 2041.
+Package pdftex.def Info: graphics/bert.pdf used on input line 2052.
 (pdftex.def)             Requested size: 72.26816pt x 90.33301pt.
-
+ [11 <./graphics/bert.pdf>]
 
 pdfTeX warning: pdflatex (file ./graphics/penzenstadler.pdf): PDF inclusion: fo
 und PDF version <1.5>, but at most version <1.4> allowed
-<graphics/penzenstadler.pdf, id=91, 322.20375pt x 401.5pt>
+<graphics/penzenstadler.pdf, id=101, 322.20375pt x 401.5pt>
 File: graphics/penzenstadler.pdf Graphic file (type pdf)
 
 <use graphics/penzenstadler.pdf>
-Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2050.
+Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2061.
 (pdftex.def)             Requested size: 72.27147pt x 90.33359pt.
 File: graphics/penzenstadler.pdf Graphic file (type pdf)
  <use graphics/penzenstadler.pdf>
-Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2050.
+Package pdftex.def Info: graphics/penzenstadler.pdf used on input line 2061.
 (pdftex.def)             Requested size: 72.27147pt x 90.33359pt.
- [11 <./graphics/bert.pdf> <./graphics/penzenstadler.pdf>] (./weighting.aux) ) 
+ [12
+
+ <./graphics/penzenstadler.pdf>] (./weighting.aux) ) 
 Here is how much of TeX's memory you used:
  3337 strings out of 493013
  50695 string characters out of 6139338
- 151150 words of memory out of 5000000
+ 154151 words of memory out of 5000000
  6819 multiletter control sequences out of 15000+600000
  52301 words of font info for 110 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  40i,12n,39p,274b,317s stack positions out of 5000i,500n,10000p,200000b,80000s
-{
-/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist
-/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/hel
-vetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></
-usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist
-/fonts/type1/urw/palatino/uplri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/za
-pfding/uzdr.pfb>
-Output written on weighting.pdf (11 pages, 465607 bytes).
+{/usr/share/texmf-dist/font
+s/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/
+uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
+re/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-dist/fonts
+/type1/urw/palatino/uplr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/
+uplri8a.pfb></usr/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on weighting.pdf (12 pages, 466648 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
+ 166 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  55 words of extra memory for PDF output out of 10000 (max. 10000000)
 
